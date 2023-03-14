@@ -61,8 +61,8 @@ A basic API throttling system, which serves HTTP(S) requests
 }
 ```
 
-The default limits are 3 request in 60s
-This can configured in env file 
+The default limits are 3 request in 60s.
+This can be configured from env file.
     `TIME_INTERVAL_IN_SEC=60`  // time interval in seconds
     `REQUEST_LIMIT=3 ` // no of requests
 
