@@ -11,7 +11,7 @@ module.exports.isThrottling = async (req, res, next) => {
             req.headers['x-forwarded-for']?.split(',').shift() ||
             req.socket?.remoteAddress ||
             'unknown';
-        if (!referer) throw new Error('Cannot get referer');
+       
 
         // Get request frequency from redis
         const frequency = await redis.getTokenByKey(referer);
